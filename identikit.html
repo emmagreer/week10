@@ -120,11 +120,11 @@
     });
       
     // move eyes closer together event listener
-    document.getElementById('mouth_eyes_closer').addEventListener('click', function() {
-      eye_left_x -= 10;
-      document.getElementById('eye_left').style.top = eye_left_x - 'px';
+    document.getElementById('move_eyes_closer').addEventListener('click', function() {
+      eye_left_x += 10;
+      document.getElementById('eye_left').style.left = eye_left_x + 'px';
         eye_right_x -= 10;
-      document.getElementById('eye_right').style.top = eye_right_x - 'px';
+      document.getElementById('eye_right').style.left = eye_right_x + 'px';
     });
   </script>
 
