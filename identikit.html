@@ -53,9 +53,9 @@
     <a id="eyes_up_btn">move eyes up</a>
     <a id="eyes_down_btn">move eyes down</a>
     <a id="move_eyes_closer">move eyes closer together</a>
-    <a>move eyes further apart</a>
-    <a>hollow eyes</a>
-    <a>solid eyes</a>
+    <a id="move_eyes_apart">move eyes further apart</a>
+    <a id="hollow_eyes">hollow eyes</a>
+    <a id="eyes_solid_again">solid eyes</a>
     <a>big eyes</a>
     <a>small eyes</a>
     <a>no right eye</a>
@@ -125,6 +125,44 @@
       document.getElementById('eye_left').style.left = eye_left_x + 'px';
         eye_right_x -= 10;
       document.getElementById('eye_right').style.left = eye_right_x + 'px';
+    });
+      
+    // move eyes apart event listener
+    document.getElementById('move_eyes_apart').addEventListener('click', function() {
+      eye_left_x -= 10;
+      document.getElementById('eye_left').style.left = eye_left_x + 'px';
+        eye_right_x += 10;
+      document.getElementById('eye_right').style.left = eye_right_x + 'px';
+    });
+      
+    // hollow eyes event listener
+    document.getElementById('hollow_eyes_btn').addEventListener('click', function() {
+      eye_left_y -= 10;
+      document.getElementById('mouth').src = 'eye_hollow.svg';
+    });
+      
+    // hollow eyes event listener
+    document.getElementById('hollow_eyes_btn').addEventListener('click', function() {
+      eye_left_y -= 10;
+      document.getElementById('eye-left').src = 'eye_hollow.svg';
+    });
+      
+    // hollow eyes event listener
+    document.getElementById('hollow_eyes_btn').addEventListener('click', function() {
+      eye_right_y -= 10;
+      document.getElementById('mouth').src = 'eye_hollow.svg';
+    });
+      
+    // eyes solid again again event listener
+    document.getElementById('eyes_solid_again').addEventListener('click', function() {
+      eye_left_y -= 10;
+      document.getElementById('eye_left').src = 'eye_solid.svg';
+    });
+      
+    // eyes solid again again event listener
+    document.getElementById('eyes_solid_again').addEventListener('click', function() {
+      eye_left_y -= 10;
+      document.getElementById('eye_right').src = 'eye_solid.svg';
     });
   </script>
 
